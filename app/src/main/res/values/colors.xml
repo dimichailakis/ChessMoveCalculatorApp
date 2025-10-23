@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
+    <color name="ash_grey">#B2BEB5</color>
+
+    <color name="eggplant">#734B5E</color>
+    <color name="chamoise">#B58863</color>
+    <color name="tifannyBlue">#A2E8DD</color>
+    <color name="emeraldSplash">#32DE8A</color>
+
+    <color name="processCyan">#01BAEF</color>
+    <color name="ghostBlue">#2AB7CA</color>
+
+    <color name="DavysGray">#565857</color>
+
+
+    <color name="dark_grey">#FF787878</color>
+
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>

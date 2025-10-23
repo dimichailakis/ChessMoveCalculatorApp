@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">ChessMoveCalculator</string>
+    <string name="board_size_hint">Board Size (6-16)</string>
+    <string name="max_moves_hint">Max Moves</string>
+    <string name="reset_button_text">Reset</string>
+    <string name="initial_status_text">Select a start and end position.</string>
+    <string name="status_select_end">Start: %1$s. Select an end position.</string>
+    <string name="status_calculating">Start: %1$s, End: %2$s. Calculating...</string>
+    <string name="status_no_solution">No solution found from %1$s to %2$s in %3$s moves.</string>
+    <plurals name="status_solutions_found">
+        <item quantity="one">Found 1 solution:</item>
+        <item quantity="other">Found %d solutions:</item>
+    </plurals>
+    <string name="warning_title">High Move Count</string>
+    <string name="warning_message">Calculations with more than %1$d moves can crash the app. Do you want to continue?</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
 </resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:background="@color/DavysGray">
+
+    <TextView
+        android:id="@+id/pathTextView"
+        style="@style/compactText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="test1 -> test 2"
+        android:textColor="@color/tifannyBlue"
+        android:padding="8dp"
+        android:singleLine="true"
+        tools:visibility="visible"
+
+        />
+
+</HorizontalScrollView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/ash_grey">
+
+
+    <EditText
+        android:id="@+id/usersizeInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/DavysGray"
+        android:hint="@string/board_size_hint"
+        android:textColorHint="@color/tifannyBlue"
+        android:textColor="@color/tifannyBlue"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/maxMovesInput"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <EditText
+        android:id="@+id/maxMovesInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/DavysGray"
+
+        android:hint="@string/max_moves_hint"
+        android:inputType="number"
+        android:textColor="@color/tifannyBlue"
+        android:textColorHint="@color/tifannyBlue"
+        app:layout_constraintStart_toEndOf="@id/usersizeInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.chessmovecalculator.ChessboardView
+        android:id="@+id/chessboardView"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+
+        android:layout_margin="8dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usersizeInput" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/DavysGray"
+        android:text="@string/reset_button_text"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/tifannyBlue"
+        app:layout_constraintTop_toBottomOf="@+id/chessboardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        style="@style/StatusTextStyle"
+        android:layout_width="0dp"
+        android:background="@color/ash_grey"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/resetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/initial_status_text"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/pathsRecyclerView"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/statusTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
